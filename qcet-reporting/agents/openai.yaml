@@ -1,0 +1,4 @@
+interface:
+  display_name: "QCET Reporting"
+  short_description: "Evidence-based Center reports and plan-versus-actual reconciliation"
+  default_prompt: "Use qcet-reporting to draft and audit the Center's report from the provided sources, with source tracking and no fabricated data."

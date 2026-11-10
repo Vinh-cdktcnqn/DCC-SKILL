@@ -1,0 +1,53 @@
+{
+  "schema_version": "1.0",
+  "report_id": "SYNTHETIC-2026-11-001",
+  "report_type": "monthly",
+  "organization": "QCET Digital and Communications Center (SYNTHETIC DEMONSTRATION)",
+  "period": {
+    "label": "November 2026 operational reporting period",
+    "month": "2026-11",
+    "start": "2026-10-25",
+    "end": "2026-11-24",
+    "data_cutoff": "2026-11-24",
+    "exception_reason": null
+  },
+  "status": "draft",
+  "sources": [
+    {"id": "SRC-PLAN", "title": "SYNTHETIC approved Center plan", "state": "approved", "reference": "fixture://fake-plan/2026-11", "date": "2026-10-20"},
+    {"id": "SRC-OPS", "title": "SYNTHETIC operational evidence register", "state": "operational_record", "reference": "fixture://fake-logs/2026-11", "date": "2026-11-24"},
+    {"id": "SRC-DRAFT", "title": "SYNTHETIC unreviewed memo", "state": "draft", "reference": "fixture://draft/2026-11", "date": "2026-11-22"}
+  ],
+  "evidence": [
+    {"id": "EV-MGT", "source_id": "SRC-OPS", "locator": "fake-register row 1", "verification": "verified", "note": "Synthetic verification flag for tests only"},
+    {"id": "EV-IT", "source_id": "SRC-OPS", "locator": "fake-register row 2", "verification": "verified", "note": "Synthetic verification flag for tests only"},
+    {"id": "EV-COM", "source_id": "SRC-OPS", "locator": "fake-register row 3", "verification": "verified", "note": "Synthetic verification flag for tests only"},
+    {"id": "EV-STAT", "source_id": "SRC-OPS", "locator": "fake-register row 4", "verification": "verified", "note": "Synthetic verification flag for tests only"},
+    {"id": "EV-EDU", "source_id": "SRC-DRAFT", "locator": "fake-draft para 1", "verification": "pending", "note": "No validated evidence"}
+  ],
+  "plan": [
+    {"task_id": "P-MGT", "workstream": "MANAGEMENT", "description": "Review actions assigned by school leadership", "owner": "SYNTHETIC manager A", "due_date": "2026-11-24", "source_id": "SRC-PLAN"},
+    {"task_id": "P-IT", "workstream": "IT_DX", "description": "Review technical support log", "owner": "SYNTHETIC staff B", "due_date": "2026-11-20", "source_id": "SRC-PLAN"},
+    {"task_id": "P-COM", "workstream": "COMMUNICATIONS", "description": "Prepare approved communication materials", "owner": "SYNTHETIC staff C", "due_date": "2026-11-21", "source_id": "SRC-PLAN"},
+    {"task_id": "P-STAT", "workstream": "STATISTICS", "description": "Check personnel timekeeping figures", "owner": "SYNTHETIC staff D", "due_date": "2026-11-23", "source_id": "SRC-PLAN"},
+    {"task_id": "P-EDU", "workstream": "EDU_SUPPORT", "description": "Review digital learning material requests", "owner": "SYNTHETIC staff E", "due_date": "2026-11-24", "source_id": "SRC-PLAN"}
+  ],
+  "results": [
+    {"id": "R-MGT", "task_id": "P-MGT", "workstream": "MANAGEMENT", "owner": "SYNTHETIC manager A", "summary": "Sample management follow-up documented", "status": "completed", "activity_date": "2026-11-18", "evidence_ids": ["EV-MGT"], "deliverables": [{"id": "OUT-MGT", "name": "Follow-up register", "quantity": 1, "unit": "register"}]},
+    {"id": "R-IT", "task_id": "P-IT", "workstream": "IT_DX", "owner": "SYNTHETIC staff B", "summary": "Sample technical support cases reviewed", "status": "completed", "activity_date": "2026-11-19", "evidence_ids": ["EV-IT"], "deliverables": [{"id": "OUT-IT", "name": "Incident reconciliation", "quantity": 1, "unit": "record"}]},
+    {"id": "R-COM", "task_id": "P-COM", "workstream": "COMMUNICATIONS", "owner": "SYNTHETIC staff C", "summary": "Sample approved announcement", "status": "completed", "activity_date": "2026-11-21", "evidence_ids": ["EV-COM"], "deliverables": [{"id": "OUT-COM", "name": "Published item", "quantity": 1, "unit": "article"}]},
+    {"id": "R-STAT", "task_id": "P-STAT", "workstream": "STATISTICS", "owner": "SYNTHETIC staff D", "summary": "Sample staff timekeeping aggregate checked", "status": "completed", "activity_date": "2026-11-23", "evidence_ids": ["EV-STAT"], "deliverables": [{"id": "OUT-STAT", "name": "Timekeeping comparison", "quantity": 1, "unit": "table"}]},
+    {"id": "R-EDU", "task_id": "P-EDU", "workstream": "EDU_SUPPORT", "owner": "SYNTHETIC staff E", "summary": "Sample digital material request under review", "status": "in_progress", "activity_date": "2026-11-22", "evidence_ids": ["EV-EDU"], "deliverables": []}
+  ],
+  "metrics": [
+    {"id": "K-IT", "label": "Sample support cases", "workstream": "IT_DX", "value": 3, "unit": "cases", "aggregation": "sum", "numerator": null, "denominator": null, "evidence_ids": ["EV-IT"], "definition": "Synthetic individual support case entries within this operational month"},
+    {"id": "K-COM", "label": "Sample published articles", "workstream": "COMMUNICATIONS", "value": 1, "unit": "articles", "aggregation": "distinct_count", "dedup_keys": ["synthetic-article-id-001"], "numerator": null, "denominator": null, "evidence_ids": ["EV-COM"], "definition": "One unique article, not distribution posts"},
+    {"id": "K-EDU", "label": "Sample learning-material submissions", "workstream": "EDU_SUPPORT", "value": null, "unit": "submissions", "aggregation": "sum", "numerator": null, "denominator": null, "evidence_ids": ["EV-EDU"], "definition": "Unknown count pending verification"}
+  ],
+  "issues": [
+    {"id": "ISS-001", "description": "Sample cross-unit confirmation is pending", "related_task_id": "P-EDU", "owner": "SYNTHETIC manager A", "requested_decision": "Confirm request handling method", "due_date": "2026-11-27"}
+  ],
+  "next_actions": [
+    {"description": "Sample review of outstanding learning material requests", "owner": "SYNTHETIC staff E", "due_date": "2026-11-27", "source_id": "SRC-PLAN"}
+  ],
+  "open_questions": ["All source titles, quantities and persons in this fixture are fabricated for software testing; replace with official documents before actual reporting."]
+}
