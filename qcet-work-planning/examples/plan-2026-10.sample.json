@@ -1,0 +1,31 @@
+{
+  "schema_version": "1.0",
+  "organization": "Trung tâm Số - Truyền thông, Trường Cao đẳng Kỹ thuật Công nghệ Quy Nhơn",
+  "plan_id": "SAMPLE-2026-10",
+  "title": "MẪU MINH HỌA - kế hoạch tháng 10/2026, không phải kế hoạch đã duyệt",
+  "period_label": "2026-10",
+  "period_start": "2026-09-25",
+  "period_end": "2026-10-24",
+  "status": "draft",
+  "source_register": [
+    {"ref": "EXAMPLE-ONLY", "title": "Nguồn giả định chỉ để kiểm thử cú pháp", "authority": "KHÔNG PHẢI VĂN BẢN THẬT", "state": "example", "date": null}
+  ],
+  "duties": [
+    {"id": "MGT-01", "title": "Quản lý, điều hành chung", "position_group": "MANAGEMENT", "source_ref": "EXAMPLE-ONLY"},
+    {"id": "IT-01", "title": "Theo dõi hạ tầng và xử lý sự cố CNTT", "position_group": "IT_DX", "source_ref": "EXAMPLE-ONLY"},
+    {"id": "COM-01", "title": "Sản xuất nội dung truyền thông", "position_group": "COMMUNICATIONS", "source_ref": "EXAMPLE-ONLY"},
+    {"id": "STAT-01", "title": "Tổng hợp số liệu phục vụ lãnh đạo", "position_group": "STATISTICS", "source_ref": "EXAMPLE-ONLY"},
+    {"id": "EDU-01", "title": "Hỗ trợ tiếp nhận học liệu số", "position_group": "EDU_SUPPORT", "source_ref": "EXAMPLE-ONLY"}
+  ],
+  "tasks": [
+    {"id": "MGT-M", "parent_id": null, "level": "month", "duty_id": "MGT-01", "title": "Chỉ đạo, theo dõi và tổng hợp công việc tháng", "start": "2026-09-25", "end": "2026-10-24", "position_group": "MANAGEMENT", "owner": null, "contributors": [], "deliverable": "Báo cáo điều hành tháng", "acceptance_criteria": "Đối chiếu với chỉ đạo và minh chứng công việc", "source_ref": "EXAMPLE-ONLY", "hours_planned": null, "hours_actual": null, "status": "planned", "evidence_ref": null, "notes": "Một báo cáo tháng tổng hợp nhiều hoạt động điều hành"},
+    {"id": "MGT-W", "parent_id": "MGT-M", "level": "week", "duty_id": "MGT-01", "title": "Kiểm tra tiến độ xử lý việc được giao", "start": "2026-10-05", "end": "2026-10-11", "position_group": "MANAGEMENT", "owner": null, "contributors": [], "deliverable": "Bảng tiến độ cập nhật", "acceptance_criteria": "Có tình trạng và vấn đề cần chỉ đạo", "source_ref": "EXAMPLE-ONLY", "hours_planned": null, "hours_actual": null, "status": "planned", "evidence_ref": null, "notes": ""},
+    {"id": "MGT-D", "parent_id": "MGT-W", "level": "day", "duty_id": "MGT-01", "title": "Rà soát đầu việc của các nhóm", "start": "2026-10-06", "end": "2026-10-06", "position_group": "MANAGEMENT", "owner": null, "contributors": [], "deliverable": "Nhật ký chỉ đạo", "acceptance_criteria": "Có ghi nhận việc xử lý", "source_ref": "EXAMPLE-ONLY", "hours_planned": null, "hours_actual": null, "status": "planned", "evidence_ref": null, "notes": ""},
+    {"id": "IT-M", "parent_id": null, "level": "month", "duty_id": "IT-01", "title": "Theo dõi vận hành hạ tầng CNTT", "start": "2026-09-25", "end": "2026-10-24", "position_group": "IT_DX", "owner": null, "contributors": [], "deliverable": "Báo cáo vận hành và sự cố", "acceptance_criteria": "Đối chiếu nhật ký và biện pháp xử lý", "source_ref": "EXAMPLE-ONLY", "hours_planned": null, "hours_actual": null, "status": "planned", "evidence_ref": null, "notes": ""},
+    {"id": "COM-M", "parent_id": null, "level": "month", "duty_id": "COM-01", "title": "Biên tập tin bài hoạt động Nhà trường", "start": "2026-09-25", "end": "2026-10-24", "position_group": "COMMUNICATIONS", "owner": null, "contributors": [], "deliverable": "Danh mục tin bài đã duyệt", "acceptance_criteria": "Có nguồn và trạng thái duyệt", "source_ref": "EXAMPLE-ONLY", "hours_planned": null, "hours_actual": null, "status": "planned", "evidence_ref": null, "notes": ""},
+    {"id": "STAT-M", "parent_id": null, "level": "month", "duty_id": "STAT-01", "title": "Kiểm tra số liệu chấm công phục vụ Hiệu trưởng", "start": "2026-09-25", "end": "2026-10-24", "position_group": "STATISTICS", "owner": null, "contributors": [], "deliverable": "Báo cáo đối chiếu số liệu chấm công", "acceptance_criteria": "Không nhầm dữ liệu chấm công với điểm danh HSSV", "source_ref": "EXAMPLE-ONLY", "hours_planned": null, "hours_actual": null, "status": "planned", "evidence_ref": null, "notes": ""},
+    {"id": "EDU-M", "parent_id": null, "level": "month", "duty_id": "EDU-01", "title": "Tiếp nhận danh mục học liệu số đăng ký", "start": "2026-09-25", "end": "2026-10-24", "position_group": "EDU_SUPPORT", "owner": null, "contributors": [], "deliverable": "Danh sách học liệu số nhận được", "acceptance_criteria": "Có khoa gửi, loại tài liệu và trạng thái tiếp nhận", "source_ref": "EXAMPLE-ONLY", "hours_planned": null, "hours_actual": null, "status": "planned", "evidence_ref": null, "notes": ""}
+  ],
+  "capacity_targets": [],
+  "open_questions": ["Chưa có văn bản phân công nhân sự và kế hoạch tháng được duyệt; đây chỉ là mẫu cấu trúc"]
+}

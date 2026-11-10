@@ -1,0 +1,6 @@
+interface:
+  display_name: "QCET Work Planning"
+  short_description: "Lập và kiểm tra kế hoạch năm-tháng-tuần-ngày theo VTVL của Trung tâm Số - Truyền thông"
+  brand_color: "#245D80"
+policy:
+  allow_implicit_invocation: true
